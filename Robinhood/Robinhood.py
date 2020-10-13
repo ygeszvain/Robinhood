@@ -1346,7 +1346,7 @@ class Robinhood:
         if(quantity is None):
             raise(ValueError('No quantity specified in call to submit_sell_order'))
 
-        quantity = int(quantity)
+        quantity = float(quantity)
 
         if(quantity <= 0):
             raise(ValueError('Quantity must be positive number in call to submit_sell_order'))
@@ -1491,7 +1491,7 @@ class Robinhood:
         if(quantity is None):
             raise(ValueError('No quantity specified in call to submit_buy_order'))
 
-        quantity = int(quantity)
+        quantity = float(quantity)
 
         if(quantity <= 0):
             raise(ValueError('Quantity must be positive number in call to submit_buy_order'))
